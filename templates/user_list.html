@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+http://opentechschool.github.io/python-flask/extras/databases.html
+Follow this when you're done to replace this temporary page with a real database.
+
+
+-->
+
+<head>
+  <title>Ostream Users</title>
+</head>
+
+<body>
+  <p>Here are all the users:</p>
+  <ul>
+    {% for user in user_list %}
+    {% for key,value in user_list.items() %}
+    <h4>User Name: {{key}}</h4>
+    <h5>User Email: {{value}}</h5>
+    {% endfor %}
+    {% endfor %}
+  </ul>
+</body>
+
+</html>
